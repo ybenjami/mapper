@@ -1,0 +1,39 @@
+{
+    "AppConfig":{
+      "Csv": {
+        "fileName": "output.csv",
+        "path": "../temp/",
+        "fields":  [
+          "artistId",
+          "collectionId",
+          "amgArtistId",
+          "artistName",
+          "collectionName",
+          "collectionCensoredName",
+          "collectionViewUrl",
+          "collectionPrice",
+          "collectionExplicitness",
+          "trackCount",
+          "copyright",
+          "releaseDate",
+          "primaryGenreName"
+        ]
+      },
+      "ApiSource": {
+        "isSecureEndpoint": false,
+        "sourceEnpoint": "https://itunes.apple.com/lookup?id=1273063&entity=album"
+        
+      },
+    "fileDistribution":{
+      "type": "S3"
+    },
+    "S3": {
+      "bucketName": "yb-bucket-test4",
+      "key": "output.csv",
+      "datePrefix": true,
+      "region": "us-east-1"
+      }
+  }
+}
+
+
