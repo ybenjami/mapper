@@ -1,5 +1,6 @@
 const config = require('config');
 const s3Utility = require('./s3-utilities/s3-upload-util');
+const mapper = require('./mapper');
 
 
 const init =async ()=>{
@@ -26,14 +27,16 @@ const init =async ()=>{
     }
   
     /**
-    * ADD MAPPER LOGIC HERE!
+    * Mapper Logic
     */
 
+    const s = mapper.init();
+    console.log(s);
     //TODO: Module Generic Mapper
     /**
     * Convert JSON TO CSV
     */
-     await converter.convert(data);
+     await converter.convert(s.results);
     /**
     * Handle Uploader
     */

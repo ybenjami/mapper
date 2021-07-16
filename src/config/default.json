@@ -4,24 +4,17 @@
         "fileName": "output.csv",
         "path": "../temp/",
         "fields":  [
-          "artistId",
-          "collectionId",
-          "amgArtistId",
-          "artistName",
-          "collectionName",
-          "collectionCensoredName",
-          "collectionViewUrl",
-          "collectionPrice",
-          "collectionExplicitness",
-          "trackCount",
-          "copyright",
-          "releaseDate",
-          "primaryGenreName"
+          "id",
+          "offer",
+          "value",
+          "categories",
+          "skus"
         ]
       },
       "ApiSource": {
-        "isSecureEndpoint": false,
-        "sourceEnpoint": "https://itunes.apple.com/lookup?id=1273063&entity=album"
+        "isSecureEndpoint": true,
+        "key": "Cedp2LauDyqmKPJLww9WU6EyfvRFE9jV",
+        "sourceEnpoint": "https://api.polygon.io/vX/reference/tickers/AAPL?&apiKey=Cedp2LauDyqmKPJLww9WU6EyfvRFE9jV"
         
       },
     "fileDistribution":{
